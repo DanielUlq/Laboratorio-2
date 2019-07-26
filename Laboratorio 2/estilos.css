@@ -1,0 +1,113 @@
+body{	/*al body se le agrego una imagen de fondo */
+	background-image: url("imagenes/fondo.jpg");
+}
+
+.header{	/*atributos que contendra el encabezado*/
+	font-size: 45px;
+	font-family: Rockwell;
+	text-align: center;
+	margin: auto;
+}	
+
+.slider{  /*atributos que tendra el slider*/
+	position: relative;
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+	margin: initial;
+	padding: initial;
+}
+
+.slider ul{
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 20s infinite alternate; /*la lista tendra una nimacion infinita que durara en total 20 segundos*/
+}
+
+.slider li{
+	list-style: none;
+	width: 100%;
+}
+
+.slider img{
+	width: 100%;
+}
+
+@keyframes cambio{  /* se establecen los frames, es decir, la duracion de cada imagen en el slider*/
+	0%{margin-left: 0;}
+	20%{margin-left: 0;}
+
+	25%{margin-left: -100%}
+	45%{margin-left: -100%}
+
+	50%{margin-left: -200%}
+	70%{margin-left: -200%}
+
+	75%{margin-left: -300%}
+	100%{margin-left: -300%}
+}
+
+.contenedor{   /*atributos que tendra el contenedor*/
+	display: flex;
+	width: 100%;
+	height: 40px;
+	font-size: 40px;
+	line-height: 40px;
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	font-family: Rockwell;
+
+	overflow: hidden;  /*con overflow hidden ocultamos los elementos de la lista que no esten en su timempo*/
+	
+}
+
+ul{
+	list-style: none;
+	padding-left: 10px;
+	animation: cambiar 7s infinite; /*se crea una animacion que se repetira infinitamente*/
+}
+ul, p{
+	margin: 0;
+}
+
+li{
+	color: #8b212e;
+}
+
+@keyframes cambiar{   /*con keyframes se controlan los tiempos que durara cada texto en pantalla*/
+	0%{margin-top: 0;}
+	20%{margin-top: 0;}
+	25%{margin-top: -40px;}
+	50%{margin-top: -40px;}
+	55%{margin-top: -80px;}
+	80%{margin-top: -80px;}
+	85%{margin-top: -40px;}
+	95%{margin-top: -40px;}
+	100%{margin-top: 0;}
+
+}
+
+.contenedor2{  /*atributos que tiene el contenedor2*/
+	font-size: 30px;
+	font-family: Rockwell;
+	text-align: justify;
+	margin: auto;
+}
+
+.footer{  /*atributos del footer*/
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: #c5fbf8;
+	color: #571019;
+	font-family: Rockwell;
+	text-align: center;
+}
+
+
